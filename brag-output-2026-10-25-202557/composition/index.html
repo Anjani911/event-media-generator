@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=1920,height=1080" />
+<title>Campus Creator AI — brag</title>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+:root{--ground:#fafafa;--ink:#18181b;--muted:#71717a;--line:#e4e4e7;--indigo:#4338ca;--indigo-pale:#eef2ff;--emerald:#047857;--font:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box}html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:var(--ground);color:var(--ink);font-family:var(--font)}
+#root{width:1920px;height:1080px;position:relative;background:var(--ground);overflow:hidden}
+.scene{position:absolute;inset:0;padding:62px 88px;background:var(--ground);visibility:hidden;opacity:0}.scene:first-child{visibility:visible;opacity:1}
+.topline{display:flex;align-items:center;justify-content:space-between;font-size:28px;color:var(--muted);margin-bottom:36px}.brand{font-weight:750;letter-spacing:-.04em;color:var(--ink);font-size:28px}.brand-mark{display:inline-grid;place-items:center;width:32px;height:32px;background:var(--indigo);border-radius:10px;color:white;margin-right:10px;font-size:18px}
+.pill{display:inline-flex;align-items:center;border-radius:999px;padding:9px 16px;background:var(--indigo-pale);color:var(--indigo);font-weight:650;font-size:22px;letter-spacing:.02em}
+.app-shell{width:1744px;height:810px;margin:auto;border:1px solid var(--line);border-radius:26px;background:white;box-shadow:0 22px 70px rgba(24,24,27,.08);display:grid;grid-template-columns:330px 1fr;overflow:hidden}
+.sidebar{border-right:1px solid var(--line);padding:32px 24px}.side-brand{font-size:20px;font-weight:750;letter-spacing:-.04em;margin-bottom:5px}.side-sub{font-size:13px;color:var(--muted);margin-bottom:38px}.nav-item{display:flex;align-items:center;gap:13px;padding:15px 16px;border-radius:12px;color:#52525b;font-size:17px;margin:7px 0}.nav-item.active{background:var(--indigo-pale);color:#3730a3;font-weight:650}.nav-icon{width:20px;text-align:center;font-size:18px}
+.main{padding:32px 38px}.main h2{margin:0;font-size:34px;letter-spacing:-.04em}.subhead{color:var(--muted);font-size:24px;margin-top:9px}.columns{display:grid;grid-template-columns: .9fr 1.1fr;gap:25px;margin-top:30px}.panel{border:1px solid var(--line);border-radius:19px;background:#fff;padding:23px}.panel-title{font-size:28px;font-weight:700;display:flex;align-items:center;gap:12px;margin-bottom:19px}.number{display:grid;place-items:center;width:27px;height:27px;border-radius:999px;background:var(--indigo-pale);color:var(--indigo);font-size:14px}
+.field{margin:0 0 10px}.field label{display:block;color:#52525b;font-size:18px;font-weight:650;margin-bottom:6px}.input{border:1px solid #d4d4d8;border-radius:9px;padding:12px 13px;color:#3f3f46;font-size:28px;background:#fff;min-height:54px}.input.selected{border-color:#818cf8;box-shadow:0 0 0 3px #eef2ff}.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}.button{display:flex;align-items:center;justify-content:center;gap:10px;background:#18181b;color:#fff;border-radius:12px;padding:17px 20px;font-weight:650;font-size:28px;margin-top:13px}.result-empty{height:560px;border:2px dashed var(--line);border-radius:18px;display:grid;place-content:center;text-align:center;color:var(--muted)}.play{width:68px;height:68px;margin:0 auto 16px;border-radius:999px;background:#f4f4f5;color:#8c8c94;display:grid;place-items:center;font-size:26px}
+.hero{position:absolute;left:130px;top:255px;width:550px}.hero h1{font-size:74px;line-height:1.03;letter-spacing:-.065em;margin:22px 0 18px}.hero p{font-size:23px;color:#52525b;line-height:1.45;margin:0}.accent{color:var(--indigo)}
+.float-note{position:absolute;right:138px;top:185px;width:475px;background:white;border:1px solid var(--line);border-radius:20px;padding:25px 28px;box-shadow:0 18px 50px rgba(24,24,27,.10);transform:rotate(2deg)}.note-label{color:var(--muted);font-size:20px;font-weight:650;text-transform:uppercase;letter-spacing:.1em}.note-title{font-size:25px;line-height:1.18;font-weight:700;letter-spacing:-.03em;margin:13px 0}.note-line{color:#52525b;font-size:16px;line-height:1.45}
+.result-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.result-card{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:white;min-height:140px;box-shadow:0 4px 14px rgba(24,24,27,.035)}.result-head{background:#fafafa;border-bottom:1px solid var(--line);padding:12px 14px;display:flex;justify-content:space-between;align-items:center;font-size:24px;font-weight:700;color:#3f3f46}.result-head em{font-style:normal;color:var(--indigo);font-size:18px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}.result-body{padding:13px 14px;color:#52525b;font-size:28px;line-height:1.22}.tiny-copy{font-size:14px;color:#a1a1aa}
+.kit-bar{height:50px;display:flex;align-items:center;justify-content:space-between;margin-bottom:19px}.kit-label{font-size:24px;font-weight:700;letter-spacing:-.04em}.done{font-size:14px;font-weight:650;color:var(--emerald);display:flex;gap:8px;align-items:center}.tagline-card{grid-column:span 1;min-height:85px;background:var(--indigo-pale);border-color:#c7d2fe}.tagline-card .result-head{background:transparent;border-color:#c7d2fe}.tagline-card .result-body{font-size:28px;color:#312e81;font-weight:650}
+.future-layout{height:780px;display:flex;align-items:center;justify-content:space-around;gap:80px;padding:18px 90px}.future-copy{width:690px}.future-copy h1{font-size:66px;line-height:1.02;letter-spacing:-.065em;margin:22px 0}.future-copy p{font-size:30px;line-height:1.35;color:#52525b;margin:0}.future-note{margin-top:28px;padding:20px 24px;border:1px solid #c7d2fe;background:#eef2ff;color:#312e81;border-radius:16px;font-size:25px;font-weight:650}.poster-preview{width:490px;height:680px;border-radius:24px;padding:24px;background:#18181b;color:white;box-shadow:0 28px 70px rgba(24,24,27,.2);display:flex;flex-direction:column;justify-content:space-between;transform:rotate(1.5deg)}.poster-top{font-size:18px;letter-spacing:.16em;text-transform:uppercase;color:#c7d2fe;font-weight:700}.poster-title{font-size:63px;letter-spacing:-.06em;line-height:.98;font-weight:800}.poster-sub{font-size:27px;line-height:1.3;color:#e4e4e7}.poster-details{border-top:1px solid #52525b;padding-top:18px;font-size:28px;color:#c7d2fe;line-height:1.5}.registration-card{width:660px;background:white;border:1px solid var(--line);border-top:14px solid #673ab7;border-radius:20px;padding:32px;box-shadow:0 24px 70px rgba(24,24,27,.12)}.registration-card h2{font-size:38px;letter-spacing:-.04em;margin:18px 0 12px}.registration-card p{font-size:25px;line-height:1.35;color:#52525b;margin:0 0 22px}.form-field{border:1px solid #d4d4d8;border-radius:10px;padding:16px 18px;margin:13px 0;color:#52525b;font-size:24px}.form-button{display:inline-block;background:#673ab7;color:#fff;border-radius:8px;padding:15px 24px;font-size:24px;font-weight:700;margin-top:10px}.future-copy .pill{font-size:22px}.final{height:100%;display:flex;align-items:center;justify-content:center;text-align:center}.final-inner{width:1100px}.final h1{font-size:86px;letter-spacing:-.07em;margin:26px 0 18px;line-height:1}.final p{font-size:24px;color:#52525b;margin:0}.final .brand-mark{width:56px;height:56px;font-size:28px;border-radius:17px;margin:0}
+.small-label{font-size:21px;color:#737379;letter-spacing:.12em;text-transform:uppercase;font-weight:700}.cursor{position:absolute;width:27px;height:34px;left:960px;top:712px;z-index:10;filter:drop-shadow(0 2px 2px rgba(0,0,0,.24))}
+
+</style>
+</head>
+<body>
+<div data-hf-id="hf-enpg" id="root" data-composition-id="main" data-start="0" data-duration="25" data-width="1920" data-height="1080" data-fps="30">
+  <section data-hf-id="hf-exqp" class="scene clip" id="scene1" data-start="0" data-duration="3" data-track-index="0">
+    <div data-hf-id="hf-o5lv" class="topline"><div data-hf-id="hf-u7l8" class="brand"><span data-hf-id="hf-vss8" class="brand-mark" data-layout-ignore>C</span>Campus Creator AI</div><div data-hf-id="hf-1u6w" class="pill" data-layout-ignore>LIVE PROTOTYPE</div></div>
+    <div data-hf-id="hf-hie8" class="hero"><span data-hf-id="hf-4d3q" class="pill" data-layout-ignore>FOR STUDENT CLUBS</span><h1 data-hf-id="hf-ap1i">One event.<br/><span class="accent">A whole</span><br/>launch kit.</h1></div>
+    <div data-hf-id="hf-87av" class="float-note"><div data-hf-id="hf-rr44" class="note-label" data-layout-ignore>Event brief</div><div data-hf-id="hf-fcu0" class="note-title">Tech for Good Night</div><div data-hf-id="hf-j2uk" class="note-line" data-layout-ignore>Hands-on building · Project demos · Live Q&amp;A</div></div>
+    <div data-hf-id="hf-dp9n" class="small-label" data-layout-ignore style="position:absolute;bottom:56px;right:92px">A campaign, from one brief</div>
+  </section>
+  <section data-hf-id="hf-ydsz" class="scene clip" id="scene2" data-start="3" data-duration="3" data-track-index="1">
+    <div data-hf-id="hf-pz6r" class="topline"><div data-hf-id="hf-dj0k" class="brand"><span data-hf-id="hf-saq8" class="brand-mark" data-layout-ignore>C</span>Campus Creator AI</div><div data-hf-id="hf-slrq" class="pill" data-layout-ignore>01 / STYLE PROFILE</div></div>
+    <div data-hf-id="hf-4acs" class="app-shell"><aside data-hf-id="hf-3zyg" class="sidebar" data-layout-ignore><div data-hf-id="hf-fili" class="side-brand">Campus Creator AI</div><div data-hf-id="hf-j2sx" class="side-sub">Hackathon Deep Dive</div><div data-hf-id="hf-ffv9" class="nav-item"><span data-hf-id="hf-9z4y" class="nav-icon">▤</span>Deep Dive Doc</div><div data-hf-id="hf-126p" class="nav-item active"><span data-hf-id="hf-gqcf" class="nav-icon">▷</span>Live Prototype</div></aside><main data-hf-id="hf-g3rz" class="main"><h2 data-hf-id="hf-0vtf">Live Prototype</h2><div data-hf-id="hf-h551" class="subhead" data-layout-ignore>Generate a promotional kit using the Gemini API.</div><div data-hf-id="hf-zyj5" class="columns"><div data-hf-id="hf-owjm" class="panel"><div data-hf-id="hf-q911" class="panel-title"><span data-hf-id="hf-0tfu" class="number" data-layout-ignore>1</span>Style Profile</div><div data-hf-id="hf-876t" class="field" data-layout-ignore><label data-hf-id="hf-xbnw">Club Name</label><div data-hf-id="hf-pyr6" class="input">AI Club</div></div><div data-hf-id="hf-net5" class="field" data-layout-ignore><label data-hf-id="hf-y76y">Preferred Tone</label><div data-hf-id="hf-jve9" class="input selected">serious and technical</div></div><div data-hf-id="hf-9yku" class="two"><div data-hf-id="hf-olq8" class="field" data-layout-ignore><label data-hf-id="hf-yhu6">Emoji Usage</label><div data-hf-id="hf-l32i" class="input selected">minimal</div></div><div data-hf-id="hf-o7f7" class="field" data-layout-ignore><label data-hf-id="hf-oe64">Formality (1-10)</label><div data-hf-id="hf-8bcl" class="input selected">8</div></div></div><div data-hf-id="hf-vekj" class="panel-title" style="margin-top:20px"><span data-hf-id="hf-17qv" class="number" data-layout-ignore>2</span>Event Details</div><div data-hf-id="hf-m7w2" class="field" data-layout-ignore><label data-hf-id="hf-2mmu">Event Name</label><div data-hf-id="hf-4x6h" class="input">Intro to Reinforcement Learning Workshop</div></div></div><div data-hf-id="hf-gxly" class="panel"><div data-hf-id="hf-ccb7" class="panel-title">A voice the club can recognize</div><div data-hf-id="hf-ka7r" class="result-empty" style="height:535px"><div data-hf-id="hf-yeow"><div data-hf-id="hf-d1ag" class="play">✦</div><strong data-hf-id="hf-fgty" style="font-size:28px;color:#52525b">Tone, emoji use, formality.</strong><div data-hf-id="hf-nuz5" style="font-size:24px;margin-top:8px">A few choices set the starting point.</div></div></div></div></div></main></div>
+  </section>
+    <section class="scene clip" id="scene3" data-start="6" data-duration="4" data-track-index="2">
+    <div class="topline"><div class="brand"><span class="brand-mark" data-layout-ignore>C</span>Campus Creator AI</div><div class="pill" data-layout-ignore>02 / EVENT DETAILS</div></div>
+    <div class="app-shell"><aside class="sidebar" data-layout-ignore><div class="side-brand">Campus Creator AI</div><div class="side-sub">Hackathon Deep Dive</div><div class="nav-item">▤ &nbsp; Deep Dive Doc</div><div class="nav-item active">▷ &nbsp; Live Prototype</div></aside><main class="main"><h2>Tell us about the event</h2><div class="subhead" data-layout-ignore>Start with the details your club already knows.</div><div class="columns"><div class="panel"><div class="panel-title">Event Details</div><div class="field" data-layout-ignore><label>Event Name</label><div class="input selected">Tech for Good Night</div></div><div class="two"><div class="field" data-layout-ignore><label>Date &amp; Time</label><div class="input">Nov 12 · 5:00 PM</div></div><div class="field" data-layout-ignore><label>Venue</label><div class="input">Student Center</div></div></div><div class="two"><div class="field" data-layout-ignore><label>Audience</label><div class="input">All students</div></div><div class="field" data-layout-ignore><label>Club voice</label><div class="input">AI Club · technical</div></div></div><div class="field" data-layout-ignore><label>Key Highlights</label><div class="input selected" style="min-height:80px">Hands-on building, project demos, live Q&amp;A</div></div><div class="button" id="generate">✦ &nbsp;Generate Promotional Kit</div></div><div class="panel"><div class="panel-title">Your brief is taking shape</div><div class="result-empty" style="height:530px"><div><div class="play">✦</div><strong style="font-size:28px;color:#52525b">Event details in.</strong><div style="font-size:24px;margin-top:8px">Copy kit, poster, and sign-up flow.</div></div></div></div></div></main></div>
+  </section>
+  <section data-hf-id="hf-pbef" class="scene clip" id="scene4" data-start="10" data-duration="4.5" data-track-index="3">
+    <div data-hf-id="hf-p6kp" class="topline"><div data-hf-id="hf-cqei" class="brand"><span data-hf-id="hf-ri46" class="brand-mark" data-layout-ignore>C</span>Campus Creator AI</div><div data-hf-id="hf-3ma5" class="pill" data-layout-ignore>03 / GENERATED KIT</div></div>
+    <div data-hf-id="hf-j83h" class="app-shell"><aside data-hf-id="hf-itbt" class="sidebar" data-layout-ignore><div data-hf-id="hf-n5cn" class="side-brand">Campus Creator AI</div><div data-hf-id="hf-ha98" class="side-sub">Hackathon Deep Dive</div><div data-hf-id="hf-mmc0" class="nav-item"><span data-hf-id="hf-z6gj" class="nav-icon">▤</span>Deep Dive Doc</div><div data-hf-id="hf-p1qk" class="nav-item active"><span data-hf-id="hf-cy9e" class="nav-icon">▷</span>Live Prototype</div></aside><main data-hf-id="hf-wtgy" class="main"><div data-hf-id="hf-kjpo" class="kit-bar"><div data-hf-id="hf-x11t"><h2 data-hf-id="hf-y7ly">Live Prototype</h2><div data-hf-id="hf-7wnv" class="subhead" data-layout-ignore>One event brief, adapted for the channel.</div></div><div data-hf-id="hf-rn34" class="done" data-layout-ignore>● &nbsp;Kit Generated Successfully</div></div><div data-hf-id="hf-5prw" class="result-grid">
+      <div data-hf-id="hf-0z3i" class="result-card"><div data-hf-id="hf-svf6" class="result-head"><span data-hf-id="hf-hdl9">Poster Copy</span><em data-hf-id="hf-slny" data-layout-ignore>Copy</em></div><div data-hf-id="hf-kxbi" class="result-body"><b data-hf-id="hf-w8zq">Build something useful.</b><br data-hf-id="hf-szow"/>An evening of demos, ideas, and live Q&amp;A.</div></div>
+      <div data-hf-id="hf-16sy" class="result-card"><div data-hf-id="hf-ys0m" class="result-head"><span data-hf-id="hf-zfj1">Instagram Caption</span><em data-hf-id="hf-dlf6" data-layout-ignore>Copy</em></div><div data-hf-id="hf-m2re" class="result-body">Tech for Good Night: demos, builds &amp; live Q&amp;A.</div></div>
+      <div data-hf-id="hf-1l3z" class="result-card"><div data-hf-id="hf-z6bn" class="result-head"><span data-hf-id="hf-hodm">WhatsApp Text</span><em data-hf-id="hf-dzq7" data-layout-ignore>Copy</em></div><div data-hf-id="hf-luwg" class="result-body">AI Club · Tech for Good Night · Hands-on building + live Q&amp;A.</div></div>
+      <div data-hf-id="hf-1zf0" class="result-card"><div data-hf-id="hf-zkmo" class="result-head"><span data-hf-id="hf-a02o">Email Draft</span><em data-hf-id="hf-ee18" data-layout-ignore>Copy</em></div><div data-hf-id="hf-34wq" class="result-body">Subject: Join Tech for Good Night.</div></div>
+      <div data-hf-id="hf-2dq1" class="result-card"><div data-hf-id="hf-wshh" class="result-head"><span data-hf-id="hf-5gqz">LinkedIn Post</span><em data-hf-id="hf-esc9" data-layout-ignore>Copy</em></div><div data-hf-id="hf-l8na" class="result-body">Build, share, and meet your campus tech community.</div></div>
+      <div data-hf-id="hf-jclb" class="result-card tagline-card"><div data-hf-id="hf-x6si" class="result-head"><span data-hf-id="hf-3dia">Taglines</span><em data-hf-id="hf-xhqs" data-layout-ignore>5 options</em></div><div data-hf-id="hf-t1nf" class="result-body">“Ideas into impact.”</div></div>
+    </div></main></div>
+  </section>
+  <section class="scene clip" id="scene5" data-start="14.5" data-duration="4" data-track-index="4">
+    <div class="topline"><div class="brand"><span class="brand-mark" data-layout-ignore>C</span>Campus Creator AI</div><div class="pill" data-layout-ignore>NEXT BUILD · POSTER GENERATION</div></div>
+    <div class="future-layout"><div class="future-copy"><span class="pill" data-layout-ignore>FROM THE EVENT DETAILS</span><h1>Turn the brief into a <span class="accent">poster.</span></h1><p>Generate a visual poster, then tune the headline and event details before sharing it.</p><div class="future-note">Concept preview · poster generation is a planned feature</div></div><div class="poster-preview" id="poster-preview"><div class="poster-top" data-layout-ignore>Campus Creator AI · Event Poster</div><div class="poster-top" data-layout-ignore>Concept preview</div><div class="poster-title">TECH FOR<br/>GOOD<br/><span style="color:#a5b4fc">NIGHT</span></div><div class="poster-sub">Build something useful. Meet the people making it happen.</div><div class="poster-details">NOV 12 · 5:00 PM<br/>STUDENT CENTER<br/>OPEN TO ALL STUDENTS</div></div></div>
+  </section>
+  <section class="scene clip" id="scene6" data-start="18.5" data-duration="3.5" data-track-index="5">
+    <div class="topline"><div class="brand"><span class="brand-mark" data-layout-ignore>C</span>Campus Creator AI</div><div class="pill" data-layout-ignore>NEXT BUILD · REGISTRATION</div></div>
+    <div class="future-layout"><div class="future-copy"><span class="pill" data-layout-ignore>GOOGLE FORMS CONCEPT</span><h1>Make sign-ups <span class="accent">part of the kit.</span></h1><p>Gather attendee details. Share one signup destination.</p><div class="future-note">Planned flow · form creation and Google Forms connection are not implemented yet</div></div><div class="registration-card" id="registration-card"><div class="small-label" data-layout-ignore>Google Forms · concept preview</div><h2>Register for Tech for Good Night</h2><p>Join the AI Club for Tech for Good Night.</p><div class="form-field">Full name</div><div class="form-field">Email address</div><div class="form-field">Year of study</div><div class="form-button">Submit registration</div></div></div>
+  </section>  <section class="scene clip" id="scene7" data-start="22" data-duration="3" data-track-index="6">
+    <div data-hf-id="hf-0n3c" class="final"><div data-hf-id="hf-l2ob" class="final-inner"><div data-hf-id="hf-53e8" class="brand-mark">C</div><div data-hf-id="hf-6yix" class="pill" data-layout-ignore style="margin-top:25px">CAMPUS CREATOR AI</div><h1 data-hf-id="hf-5b4w">One event brief.<br/><span class="accent">Copy now. Poster + signup next.</span></h1><p>Campus Creator AI · your fuller event launch kit.</p></div></div>
+  </section>
+  <svg data-hf-id="hf-ow2s" class="cursor" id="cursor" viewBox="0 0 28 36" aria-hidden="true"><path data-hf-id="hf-43i6" d="M2 2v27l7-7 5 11 5-2-5-11h10L2 2z" fill="#18181b" stroke="#fff" stroke-width="1.5"/></svg>
+  <div data-hf-id="hf-vtt2" class="progress" id="progress"></div>
+  <audio data-hf-id="hf-05pj" id="music" src="assets/music/happy-beats-business-moves-vol-9-by-ende-dot-app.mp3" data-start="0" data-duration="25" data-track-index="10" data-volume="0.32" data-fade-in="0.4" data-fade-out="1"></audio>
+  <audio data-hf-id="hf-8l2h" id="click-sfx" src="assets/click1.ogg" data-start="8.12" data-duration="0.09" data-track-index="11" data-volume="0.48"></audio>
+  <audio id="poster-sfx" src="assets/drop_001.ogg" data-start="14.76" data-duration="0.11" data-track-index="13" data-volume="0.38"></audio>
+  <audio data-hf-id="hf-cwe3" id="card-sfx" src="assets/drop_001.ogg" data-start="10.54" data-duration="0.11" data-track-index="12" data-volume="0.38"></audio>
+</div>
+<script>
+window.__timelines=window.__timelines||{};
+const tl=gsap.timeline({paused:true});
+const scenes=[["#scene1",0,3],["#scene2",3,3],["#scene3",6,4],["#scene4",10,4.5],["#scene5",14.5,4],["#scene6",18.5,3.5],["#scene7",22,3]];
+scenes.forEach(([sel,start,duration],i)=>{
+  if(i===0){tl.set(sel,{autoAlpha:1,y:0},0)} else {tl.fromTo(sel,{autoAlpha:0,y:12},{autoAlpha:1,y:0,duration:.42,ease:"power2.out"},start)}
+  if(i<scenes.length-1) tl.to(sel,{autoAlpha:0,y:-6,duration:.32,ease:"power1.in"},start+duration-.32);
+});
+tl.fromTo("#cursor",{x:0,y:0,autoAlpha:0},{x:-230,y:80,autoAlpha:1,duration:1.2,ease:"power2.inOut"},6.45);
+tl.to("#cursor",{x:-20,y:20,duration:.6,ease:"power2.inOut"},7.8);
+tl.to("#cursor",{scale:.86,duration:.1,yoyo:true,repeat:1},8.12);
+tl.to("#cursor",{autoAlpha:0,duration:.15},8.4);
+tl.fromTo(".result-card",{y:22,autoAlpha:0},{y:0,autoAlpha:1,duration:.4,stagger:.12,ease:"power2.out"},10.54);
+tl.fromTo("#poster-preview",{scale:.96,autoAlpha:0},{scale:1,autoAlpha:1,duration:.5,ease:"power2.out"},14.76);
+tl.fromTo("#registration-card",{x:24,autoAlpha:0},{x:0,autoAlpha:1,duration:.5,ease:"power2.out"},18.85);
+tl.fromTo("#progress",{width:0},{width:"100%",duration:25,ease:"none"},0);
+// beat-locked: 10.54s — generated copy reveal; 14.76s — poster concept reveal.
+// beat-grid: copy cards reveal quickly, then hold. Future feature cards enter as separate scenes.
+window.__timelines.main=tl;
+tl.seek(0);
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

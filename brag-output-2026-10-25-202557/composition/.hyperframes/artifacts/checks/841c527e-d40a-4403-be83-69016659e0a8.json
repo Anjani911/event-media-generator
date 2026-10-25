@@ -1,0 +1,371 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 7,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"scene1\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#scene1",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Coding material\\Projects\\hackthon\\Campus-Creator-ai\\brag-output-2026-10-25-202557\\composition\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"scene1\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"scene2\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#scene2",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Coding material\\Projects\\hackthon\\Campus-Creator-ai\\brag-output-2026-10-25-202557\\composition\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"scene2\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"scene3\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#scene3",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Coding material\\Projects\\hackthon\\Campus-Creator-ai\\brag-output-2026-10-25-202557\\composition\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"scene3\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"scene4\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#scene4",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Coding material\\Projects\\hackthon\\Campus-Creator-ai\\brag-output-2026-10-25-202557\\composition\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"scene4\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"scene5\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#scene5",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Coding material\\Projects\\hackthon\\Campus-Creator-ai\\brag-output-2026-10-25-202557\\composition\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"scene5\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"scene6\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#scene6",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Coding material\\Projects\\hackthon\\Campus-Creator-ai\\brag-output-2026-10-25-202557\\composition\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"scene6\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"scene7\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#scene7",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Coding material\\Projects\\hackthon\\Campus-Creator-ai\\brag-output-2026-10-25-202557\\composition\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"scene7\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 25,
+    "samples": [
+      1.389,
+      4.167,
+      6.944,
+      9.722,
+      12.5,
+      15.278,
+      18.056,
+      20.833,
+      23.611
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      1.389,
+      6.944,
+      12.5,
+      18.056,
+      23.611
+    ],
+    "checked": 39,
+    "passed": 39
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 18 text elements stay under it for 0.5 s or more, the smallest \"A few choices set the starting point.\" at 24 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "A few choices set the starting point.",
+        "selector": "#scene2 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1228.77,
+          "y": 682.31,
+          "width": 407.39,
+          "height": 29
+        },
+        "time": 3.125,
+        "times": [
+          0,
+          3.125,
+          6.125,
+          10.75,
+          10.875,
+          10.875,
+          11,
+          11.25,
+          11.25,
+          14.625,
+          14.875,
+          18.625,
+          19,
+          19,
+          19,
+          19,
+          19,
+          22.125
+        ],
+        "fontPx": 24,
+        "floorPx": 28,
+        "seconds": 2.875,
+        "elements": [
+          {
+            "selector": "#scene2 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "A few choices set the starting point.",
+            "fontPx": 24,
+            "time": 3.125,
+            "seconds": 2.875
+          },
+          {
+            "selector": "#scene3 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "Copy kit, poster, and sign-up flow.",
+            "fontPx": 24,
+            "time": 6.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "div.result-grid > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "Poster Copy",
+            "fontPx": 24,
+            "time": 10.75,
+            "seconds": 3.75
+          },
+          {
+            "selector": "div.result-grid > div:nth-of-type(2) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "Instagram Caption",
+            "fontPx": 24,
+            "time": 10.875,
+            "seconds": 3.625
+          },
+          {
+            "selector": "div.result-grid > div:nth-of-type(3) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "WhatsApp Text",
+            "fontPx": 24,
+            "time": 10.875,
+            "seconds": 3.625
+          },
+          {
+            "selector": "div.result-grid > div:nth-of-type(4) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "Email Draft",
+            "fontPx": 24,
+            "time": 11,
+            "seconds": 3.5
+          },
+          {
+            "selector": "div.result-grid > div:nth-of-type(5) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "LinkedIn Post",
+            "fontPx": 24,
+            "time": 11.25,
+            "seconds": 3.25
+          },
+          {
+            "selector": "div.result-card.tagline-card > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "Taglines",
+            "fontPx": 24,
+            "time": 11.25,
+            "seconds": 3.25
+          },
+          {
+            "selector": "#registration-card > div:nth-of-type(2)",
+            "text": "Full name",
+            "fontPx": 24,
+            "time": 19,
+            "seconds": 3
+          },
+          {
+            "selector": "#registration-card > div:nth-of-type(3)",
+            "text": "Email address",
+            "fontPx": 24,
+            "time": 19,
+            "seconds": 3
+          },
+          {
+            "selector": "#registration-card > div:nth-of-type(4)",
+            "text": "Year of study",
+            "fontPx": 24,
+            "time": 19,
+            "seconds": 3
+          },
+          {
+            "selector": "div.form-button",
+            "text": "Submit registration",
+            "fontPx": 24,
+            "time": 19,
+            "seconds": 3
+          },
+          {
+            "selector": "div.final-inner > p:nth-of-type(1)",
+            "text": "Campus Creator AI · your fuller event launch kit.",
+            "fontPx": 24,
+            "time": 22.125,
+            "seconds": 2.875
+          },
+          {
+            "selector": "div.note-title",
+            "text": "Tech for Good Night",
+            "fontPx": 25,
+            "time": 0,
+            "seconds": 3
+          },
+          {
+            "selector": "#scene5 > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1)",
+            "text": "Concept preview · poster generation is a planned feature",
+            "fontPx": 25,
+            "time": 14.625,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene6 > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1)",
+            "text": "Planned flow · form creation and Google Forms connection are not implemented yet",
+            "fontPx": 25,
+            "time": 18.625,
+            "seconds": 3.375
+          },
+          {
+            "selector": "#registration-card > p:nth-of-type(1)",
+            "text": "Join the AI Club for Tech for Good Night.",
+            "fontPx": 25,
+            "time": 19,
+            "seconds": 3
+          },
+          {
+            "selector": "div.poster-sub",
+            "text": "Build something useful. Meet the people making it happen.",
+            "fontPx": 26.47,
+            "time": 14.875,
+            "seconds": 3.625
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 200
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

@@ -1,0 +1,1223 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 10,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "timed_element_missing_clip_class",
+        "severity": "warning",
+        "message": "<section id=\"scene1\"> has timing attributes but no class=\"clip\". The runtime still hides it outside its time range, but Studio and the GSAP clip-ownership rules use .clip to recognise a clip, so leaving it off makes the element harder to edit and to lint.",
+        "selector": "#scene1",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Coding material\\Projects\\hackthon\\Campus-Creator-ai\\brag-output-2026-10-25-202557\\composition\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add class=\"clip\" to the element so Studio and the linter can recognise it as a clip."
+      },
+      {
+        "code": "timed_element_missing_clip_class",
+        "severity": "warning",
+        "message": "<section id=\"scene2\"> has timing attributes but no class=\"clip\". The runtime still hides it outside its time range, but Studio and the GSAP clip-ownership rules use .clip to recognise a clip, so leaving it off makes the element harder to edit and to lint.",
+        "selector": "#scene2",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Coding material\\Projects\\hackthon\\Campus-Creator-ai\\brag-output-2026-10-25-202557\\composition\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add class=\"clip\" to the element so Studio and the linter can recognise it as a clip."
+      },
+      {
+        "code": "timed_element_missing_clip_class",
+        "severity": "warning",
+        "message": "<section id=\"scene3\"> has timing attributes but no class=\"clip\". The runtime still hides it outside its time range, but Studio and the GSAP clip-ownership rules use .clip to recognise a clip, so leaving it off makes the element harder to edit and to lint.",
+        "selector": "#scene3",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Coding material\\Projects\\hackthon\\Campus-Creator-ai\\brag-output-2026-10-25-202557\\composition\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add class=\"clip\" to the element so Studio and the linter can recognise it as a clip."
+      },
+      {
+        "code": "timed_element_missing_clip_class",
+        "severity": "warning",
+        "message": "<section id=\"scene4\"> has timing attributes but no class=\"clip\". The runtime still hides it outside its time range, but Studio and the GSAP clip-ownership rules use .clip to recognise a clip, so leaving it off makes the element harder to edit and to lint.",
+        "selector": "#scene4",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Coding material\\Projects\\hackthon\\Campus-Creator-ai\\brag-output-2026-10-25-202557\\composition\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add class=\"clip\" to the element so Studio and the linter can recognise it as a clip."
+      },
+      {
+        "code": "timed_element_missing_clip_class",
+        "severity": "warning",
+        "message": "<section id=\"scene5\"> has timing attributes but no class=\"clip\". The runtime still hides it outside its time range, but Studio and the GSAP clip-ownership rules use .clip to recognise a clip, so leaving it off makes the element harder to edit and to lint.",
+        "selector": "#scene5",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Coding material\\Projects\\hackthon\\Campus-Creator-ai\\brag-output-2026-10-25-202557\\composition\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add class=\"clip\" to the element so Studio and the linter can recognise it as a clip."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"scene1\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#scene1",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Coding material\\Projects\\hackthon\\Campus-Creator-ai\\brag-output-2026-10-25-202557\\composition\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"scene1\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"scene2\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#scene2",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Coding material\\Projects\\hackthon\\Campus-Creator-ai\\brag-output-2026-10-25-202557\\composition\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"scene2\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"scene3\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#scene3",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Coding material\\Projects\\hackthon\\Campus-Creator-ai\\brag-output-2026-10-25-202557\\composition\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"scene3\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"scene4\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#scene4",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Coding material\\Projects\\hackthon\\Campus-Creator-ai\\brag-output-2026-10-25-202557\\composition\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"scene4\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"scene5\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#scene5",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Coding material\\Projects\\hackthon\\Campus-Creator-ai\\brag-output-2026-10-25-202557\\composition\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"scene5\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "Audio \"click-sfx\" is 0.09s but its slot (data-duration) is 0.80s — the slot is shortened to the media length when rendered. Set data-duration to ~0.09s if that isn't intended.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "20",
+          "data-width": "1920",
+          "data-height": "1080",
+          "data-fps": "30"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 0
+      },
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "Audio \"card-sfx\" is 0.11s but its slot (data-duration) is 0.80s — the slot is shortened to the media length when rendered. Set data-duration to ~0.11s if that isn't intended.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "20",
+          "data-width": "1920",
+          "data-height": "1080",
+          "data-fps": "30"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 0
+      }
+    ]
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "container_overflow",
+        "severity": "warning",
+        "time": 7.778,
+        "selector": "#scene3 > div:nth-of-type(2) > aside:nth-of-type(1)",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 89,
+          "top": 137,
+          "right": 419,
+          "bottom": 999,
+          "width": 330,
+          "height": 862
+        },
+        "containerSelector": "#scene3 > div:nth-of-type(2)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 88,
+          "top": 136,
+          "right": 1832,
+          "bottom": 976,
+          "width": 1744,
+          "height": 840
+        },
+        "overflow": {
+          "bottom": 23
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 89,
+          "y": 137,
+          "width": 330,
+          "height": 862
+        },
+        "firstSeen": 7.778,
+        "lastSeen": 10,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          7.778,
+          10
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "warning",
+        "time": 7.778,
+        "selector": "#scene3 > div:nth-of-type(2) > main:nth-of-type(1)",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 419,
+          "top": 137,
+          "right": 1831,
+          "bottom": 999,
+          "width": 1412,
+          "height": 862
+        },
+        "containerSelector": "#scene3 > div:nth-of-type(2)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 88,
+          "top": 136,
+          "right": 1832,
+          "bottom": 976,
+          "width": 1744,
+          "height": 840
+        },
+        "overflow": {
+          "bottom": 23
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 419,
+          "y": 137,
+          "width": 1412,
+          "height": 862
+        },
+        "firstSeen": 7.778,
+        "lastSeen": 10,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          7.778,
+          10
+        ]
+      }
+    ],
+    "duration": 20,
+    "samples": [
+      1.111,
+      3.333,
+      5.556,
+      7.778,
+      10,
+      12.222,
+      14.444,
+      16.667,
+      18.889
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 2,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 3,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.46:1; WCAG AA requires 4.5:1.",
+        "text": "A campaign, from one brief",
+        "fg": "rgb(161,161,170)",
+        "bg": "rgb(250,250,250)",
+        "ratio": 2.46,
+        "requiredRatio": 4.5,
+        "suggestedColor": "rgb(115,115,121)",
+        "large": false,
+        "selector": "div > section:nth-of-type(1) > div:nth-of-type(4)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1587.59375,
+          "y": 1008,
+          "width": 240.40625,
+          "height": 16
+        },
+        "time": 1.111,
+        "times": [
+          1.111
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.33:1; WCAG AA requires 3:1.",
+        "text": "✦",
+        "fg": "rgb(161,161,170)",
+        "bg": "rgb(244,244,245)",
+        "ratio": 2.33,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(140,140,148)",
+        "large": true,
+        "selector": "div > section:nth-of-type(2) > div:nth-of-type(2) > main > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1398.46875,
+          "y": 533.5,
+          "width": 68,
+          "height": 68
+        },
+        "time": 5.556,
+        "times": [
+          5.556
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.33:1; WCAG AA requires 3:1.",
+        "text": "▷",
+        "fg": "rgb(161,161,170)",
+        "bg": "rgb(244,244,245)",
+        "ratio": 2.33,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(140,140,148)",
+        "large": true,
+        "selector": "div > section:nth-of-type(3) > div:nth-of-type(2) > main > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1398.453125,
+          "y": 571,
+          "width": 68,
+          "height": 68
+        },
+        "time": 10,
+        "times": [
+          10
+        ]
+      }
+    ],
+    "enabled": true,
+    "samples": [
+      1.111,
+      5.556,
+      10,
+      14.444,
+      18.889
+    ],
+    "checked": 97,
+    "passed": 94
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 3,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "first_frame_empty",
+        "severity": "warning",
+        "message": "Frame 0 shows only the background, and the first frame is the thumbnail on social players: have the title or key image already on screen at 0 s instead of entering from nothing; see references/review.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"Set the club voice. Add the event. Make the copy fit the ...\" (13 words) is on screen 2.84 s (±0.01 s), under its 3.30 s floor: hold it about 0.5 s + 0.3 s a word (4.40 s here) before it leaves or changes; see references/motion.md.",
+        "text": "Set the club voice. Add the event. Make the copy fit the channel.",
+        "selector": "div.hero > p:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 130,
+          "y": 568.96,
+          "width": 532.23,
+          "height": 61.35000000000002
+        },
+        "time": 0.102,
+        "words": 13,
+        "seconds": 2.836,
+        "floorSeconds": 3.3
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 88 text elements stay under it for 0.5 s or more, the smallest \"Copy\" at 12 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "Copy",
+        "selector": "div.result-grid > div:nth-of-type(1) > div:nth-of-type(1) > em:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1065.94,
+          "y": 258.37,
+          "width": 37.56,
+          "height": 15
+        },
+        "time": 11.5,
+        "times": [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          3.125,
+          3.125,
+          3.125,
+          3.125,
+          3.125,
+          3.125,
+          3.125,
+          3.125,
+          3.125,
+          3.125,
+          3.125,
+          3.125,
+          3.125,
+          3.125,
+          3.125,
+          3.125,
+          3.125,
+          3.125,
+          3.125,
+          3.125,
+          3.125,
+          3.125,
+          3.125,
+          3.125,
+          3.125,
+          7.125,
+          7.125,
+          7.125,
+          7.125,
+          7.125,
+          7.125,
+          7.125,
+          7.125,
+          7.125,
+          7.125,
+          7.125,
+          7.125,
+          7.125,
+          7.125,
+          7.125,
+          7.125,
+          7.125,
+          7.125,
+          7.125,
+          7.125,
+          7.125,
+          7.125,
+          7.125,
+          7.125,
+          11.125,
+          11.125,
+          11.125,
+          11.125,
+          11.125,
+          11.125,
+          11.125,
+          11.125,
+          11.125,
+          11.5,
+          11.5,
+          11.5,
+          11.5,
+          11.75,
+          11.75,
+          11.75,
+          11.875,
+          11.875,
+          11.875,
+          12,
+          12,
+          12,
+          12.25,
+          12.25,
+          12.25,
+          12.375,
+          12.375,
+          12.375,
+          17.125,
+          17.125
+        ],
+        "fontPx": 12,
+        "floorPx": 28,
+        "seconds": 5.5,
+        "elements": [
+          {
+            "selector": "div.result-grid > div:nth-of-type(1) > div:nth-of-type(1) > em:nth-of-type(1)",
+            "text": "Copy",
+            "fontPx": 12,
+            "time": 11.5,
+            "seconds": 5.5
+          },
+          {
+            "selector": "div.result-grid > div:nth-of-type(2) > div:nth-of-type(1) > em:nth-of-type(1)",
+            "text": "Copy",
+            "fontPx": 12,
+            "time": 11.75,
+            "seconds": 5.25
+          },
+          {
+            "selector": "div.result-grid > div:nth-of-type(3) > div:nth-of-type(1) > em:nth-of-type(1)",
+            "text": "Copy",
+            "fontPx": 12,
+            "time": 11.875,
+            "seconds": 5.125
+          },
+          {
+            "selector": "div.result-grid > div:nth-of-type(4) > div:nth-of-type(1) > em:nth-of-type(1)",
+            "text": "Copy",
+            "fontPx": 12,
+            "time": 12,
+            "seconds": 5
+          },
+          {
+            "selector": "div.result-grid > div:nth-of-type(5) > div:nth-of-type(1) > em:nth-of-type(1)",
+            "text": "Copy",
+            "fontPx": 12,
+            "time": 12.25,
+            "seconds": 4.75
+          },
+          {
+            "selector": "div.result-card.tagline-card > div:nth-of-type(1) > em:nth-of-type(1)",
+            "text": "5 options",
+            "fontPx": 12,
+            "time": 12.375,
+            "seconds": 4.625
+          },
+          {
+            "selector": "div.small-label",
+            "text": "A campaign, from one brief",
+            "fontPx": 13,
+            "time": 0.125,
+            "seconds": 2.875
+          },
+          {
+            "selector": "#scene2 > div:nth-of-type(2) > aside:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "Hackathon Deep Dive",
+            "fontPx": 13,
+            "time": 3.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene2 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > label:nth-of-type(1)",
+            "text": "Club Name",
+            "fontPx": 13,
+            "time": 3.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene2 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(3) > label:nth-of-type(1)",
+            "text": "Preferred Tone",
+            "fontPx": 13,
+            "time": 3.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "div.two > div:nth-of-type(1) > label:nth-of-type(1)",
+            "text": "Emoji Usage",
+            "fontPx": 13,
+            "time": 3.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "div.two > div:nth-of-type(2) > label:nth-of-type(1)",
+            "text": "Formality (1-10)",
+            "fontPx": 13,
+            "time": 3.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene2 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(6) > label:nth-of-type(1)",
+            "text": "Event Name",
+            "fontPx": 13,
+            "time": 3.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene3 > div:nth-of-type(2) > aside:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "Hackathon Deep Dive",
+            "fontPx": 13,
+            "time": 7.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene3 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > label:nth-of-type(1)",
+            "text": "Preferred Tone",
+            "fontPx": 13,
+            "time": 7.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene3 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(4) > label:nth-of-type(1)",
+            "text": "Event Name",
+            "fontPx": 13,
+            "time": 7.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene3 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(5) > label:nth-of-type(1)",
+            "text": "Event Type",
+            "fontPx": 13,
+            "time": 7.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene3 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(6) > label:nth-of-type(1)",
+            "text": "Key Highlights",
+            "fontPx": 13,
+            "time": 7.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene4 > div:nth-of-type(2) > aside:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "Hackathon Deep Dive",
+            "fontPx": 13,
+            "time": 11.125,
+            "seconds": 5.875
+          },
+          {
+            "selector": "div.note-label",
+            "text": "Event brief",
+            "fontPx": 14,
+            "time": 0.125,
+            "seconds": 2.875
+          },
+          {
+            "selector": "#scene2 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "1",
+            "fontPx": 14,
+            "time": 3.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene2 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(5) > span:nth-of-type(1)",
+            "text": "2",
+            "fontPx": 14,
+            "time": 3.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene3 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "1",
+            "fontPx": 14,
+            "time": 7.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene3 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(3) > span:nth-of-type(1)",
+            "text": "2",
+            "fontPx": 14,
+            "time": 7.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "div.done",
+            "text": "● Kit Generated Successfully",
+            "fontPx": 14,
+            "time": 11.125,
+            "seconds": 5.875
+          },
+          {
+            "selector": "div.result-grid > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "Hands-on coding with pre-built environments.",
+            "fontPx": 14,
+            "time": 11.5,
+            "seconds": 5.5
+          },
+          {
+            "selector": "div.result-body > b:nth-of-type(1)",
+            "text": "Master Reinforcement Learning.",
+            "fontPx": 14,
+            "time": 11.5,
+            "seconds": 5.5
+          },
+          {
+            "selector": "div.result-grid > div:nth-of-type(2) > div:nth-of-type(2)",
+            "text": "Dive into the mechanics of AI. Join the AI Club for an intensive workshop.",
+            "fontPx": 14,
+            "time": 11.75,
+            "seconds": 5.25
+          },
+          {
+            "selector": "div.result-grid > div:nth-of-type(3) > div:nth-of-type(2)",
+            "text": "AI Club · Hands-on RL coding & live Q&A · Pre-built environments provided.",
+            "fontPx": 14,
+            "time": 11.875,
+            "seconds": 5.125
+          },
+          {
+            "selector": "div.result-grid > div:nth-of-type(4) > div:nth-of-type(2)",
+            "text": "Subject: Invitation — Intro to Reinforcement Learning Workshop",
+            "fontPx": 14,
+            "time": 12,
+            "seconds": 5
+          },
+          {
+            "selector": "div.result-grid > div:nth-of-type(5) > div:nth-of-type(2)",
+            "text": "A technical session with hands-on experience using pre-built environments.",
+            "fontPx": 14,
+            "time": 12.25,
+            "seconds": 4.75
+          },
+          {
+            "selector": "#scene2 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1)",
+            "text": "AI Club",
+            "fontPx": 15,
+            "time": 3.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene2 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(3) > div:nth-of-type(1)",
+            "text": "serious and technical",
+            "fontPx": 15,
+            "time": 3.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "div.two > div:nth-of-type(1) > div:nth-of-type(1)",
+            "text": "minimal",
+            "fontPx": 15,
+            "time": 3.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "div.two > div:nth-of-type(2) > div:nth-of-type(1)",
+            "text": "8",
+            "fontPx": 15,
+            "time": 3.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene2 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(6) > div:nth-of-type(1)",
+            "text": "Intro to Reinforcement Learning Workshop",
+            "fontPx": 15,
+            "time": 3.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene2 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "A few choices set the starting point.",
+            "fontPx": 15,
+            "time": 3.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene3 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1)",
+            "text": "serious and technical",
+            "fontPx": 15,
+            "time": 7.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene3 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(4) > div:nth-of-type(1)",
+            "text": "Intro to Reinforcement Learning Workshop",
+            "fontPx": 15,
+            "time": 7.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene3 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(5) > div:nth-of-type(1)",
+            "text": "workshop",
+            "fontPx": 15,
+            "time": 7.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene3 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(6) > div:nth-of-type(1)",
+            "text": "hands-on RL coding session, pre-built environments, live Q&A",
+            "fontPx": 15,
+            "time": 7.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene3 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "Generated copy appears as cards.",
+            "fontPx": 15,
+            "time": 7.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "div.result-grid > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "Poster Copy",
+            "fontPx": 15,
+            "time": 11.5,
+            "seconds": 5.5
+          },
+          {
+            "selector": "div.result-grid > div:nth-of-type(2) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "Instagram Caption",
+            "fontPx": 15,
+            "time": 11.75,
+            "seconds": 5.25
+          },
+          {
+            "selector": "div.result-grid > div:nth-of-type(3) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "WhatsApp Text",
+            "fontPx": 15,
+            "time": 11.875,
+            "seconds": 5.125
+          },
+          {
+            "selector": "div.result-grid > div:nth-of-type(4) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "Email Draft",
+            "fontPx": 15,
+            "time": 12,
+            "seconds": 5
+          },
+          {
+            "selector": "div.result-grid > div:nth-of-type(5) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "LinkedIn Post",
+            "fontPx": 15,
+            "time": 12.25,
+            "seconds": 4.75
+          },
+          {
+            "selector": "div.result-card.tagline-card > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "Taglines",
+            "fontPx": 15,
+            "time": 12.375,
+            "seconds": 4.625
+          },
+          {
+            "selector": "#scene1 > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "LIVE PROTOTYPE",
+            "fontPx": 16,
+            "time": 0.125,
+            "seconds": 2.875
+          },
+          {
+            "selector": "span.pill",
+            "text": "FOR STUDENT CLUBS",
+            "fontPx": 16,
+            "time": 0.125,
+            "seconds": 2.875
+          },
+          {
+            "selector": "div.note-line",
+            "text": "Hands-on coding · Pre-built environments · Live Q&A",
+            "fontPx": 16,
+            "time": 0.125,
+            "seconds": 2.875
+          },
+          {
+            "selector": "#scene2 > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "01 / STYLE PROFILE",
+            "fontPx": 16,
+            "time": 3.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene3 > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "02 / EVENT DETAILS",
+            "fontPx": 16,
+            "time": 7.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene4 > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "03 / GENERATED KIT",
+            "fontPx": 16,
+            "time": 11.125,
+            "seconds": 5.875
+          },
+          {
+            "selector": "div.final-inner > div:nth-of-type(2)",
+            "text": "CAMPUS CREATOR AI",
+            "fontPx": 16,
+            "time": 17.125,
+            "seconds": 2.875
+          },
+          {
+            "selector": "#scene2 > div:nth-of-type(2) > aside:nth-of-type(1) > div:nth-of-type(3)",
+            "text": "Deep Dive Doc",
+            "fontPx": 17,
+            "time": 3.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene2 > div:nth-of-type(2) > aside:nth-of-type(1) > div:nth-of-type(4)",
+            "text": "Live Prototype",
+            "fontPx": 17,
+            "time": 3.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene2 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(1)",
+            "text": "Generate a promotional kit using the Gemini API.",
+            "fontPx": 17,
+            "time": 3.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene3 > div:nth-of-type(2) > aside:nth-of-type(1) > div:nth-of-type(3)",
+            "text": "Deep Dive Doc",
+            "fontPx": 17,
+            "time": 7.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene3 > div:nth-of-type(2) > aside:nth-of-type(1) > div:nth-of-type(4)",
+            "text": "Live Prototype",
+            "fontPx": 17,
+            "time": 7.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene3 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(1)",
+            "text": "Turn the event brief into a shareable kit.",
+            "fontPx": 17,
+            "time": 7.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#generate",
+            "text": "✦ Generate Promotional Kit",
+            "fontPx": 17,
+            "time": 7.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene4 > div:nth-of-type(2) > aside:nth-of-type(1) > div:nth-of-type(3)",
+            "text": "Deep Dive Doc",
+            "fontPx": 17,
+            "time": 11.125,
+            "seconds": 5.875
+          },
+          {
+            "selector": "#scene4 > div:nth-of-type(2) > aside:nth-of-type(1) > div:nth-of-type(4)",
+            "text": "Live Prototype",
+            "fontPx": 17,
+            "time": 11.125,
+            "seconds": 5.875
+          },
+          {
+            "selector": "div.kit-bar > div:nth-of-type(1) > div:nth-of-type(1)",
+            "text": "One event brief, adapted for the channel.",
+            "fontPx": 17,
+            "time": 11.125,
+            "seconds": 5.875
+          },
+          {
+            "selector": "#scene1 > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "C",
+            "fontPx": 18,
+            "time": 0.125,
+            "seconds": 2.875
+          },
+          {
+            "selector": "#scene2 > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "C",
+            "fontPx": 18,
+            "time": 3.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene3 > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "C",
+            "fontPx": 18,
+            "time": 7.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene4 > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "C",
+            "fontPx": 18,
+            "time": 11.125,
+            "seconds": 5.875
+          },
+          {
+            "selector": "#scene2 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1)",
+            "text": "Style Profile",
+            "fontPx": 19,
+            "time": 3.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene2 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(5)",
+            "text": "Event Details",
+            "fontPx": 19,
+            "time": 3.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene2 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1)",
+            "text": "A voice the club can recognize",
+            "fontPx": 19,
+            "time": 3.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene2 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > strong:nth-of-type(1)",
+            "text": "Tone, emoji use, formality.",
+            "fontPx": 19,
+            "time": 3.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene3 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1)",
+            "text": "Style Profile",
+            "fontPx": 19,
+            "time": 7.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene3 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(3)",
+            "text": "Event Details",
+            "fontPx": 19,
+            "time": 7.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene3 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1)",
+            "text": "No kit generated yet",
+            "fontPx": 19,
+            "time": 7.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene3 > div:nth-of-type(2) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > strong:nth-of-type(1)",
+            "text": "The next click fills this space.",
+            "fontPx": 19,
+            "time": 7.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene2 > div:nth-of-type(2) > aside:nth-of-type(1) > div:nth-of-type(1)",
+            "text": "Campus Creator AI",
+            "fontPx": 20,
+            "time": 3.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene3 > div:nth-of-type(2) > aside:nth-of-type(1) > div:nth-of-type(1)",
+            "text": "Campus Creator AI",
+            "fontPx": 20,
+            "time": 7.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene4 > div:nth-of-type(2) > aside:nth-of-type(1) > div:nth-of-type(1)",
+            "text": "Campus Creator AI",
+            "fontPx": 20,
+            "time": 11.125,
+            "seconds": 5.875
+          },
+          {
+            "selector": "div.result-card.tagline-card > div:nth-of-type(2)",
+            "text": "“Train Your First Agent. Master Reinforcement Learning.”",
+            "fontPx": 20,
+            "time": 12.375,
+            "seconds": 4.625
+          },
+          {
+            "selector": "#scene1 > div:nth-of-type(1) > div:nth-of-type(1)",
+            "text": "Campus Creator AI",
+            "fontPx": 23,
+            "time": 0.125,
+            "seconds": 2.875
+          },
+          {
+            "selector": "div.hero > p:nth-of-type(1)",
+            "text": "Set the club voice. Add the event. Make the copy fit the channel.",
+            "fontPx": 23,
+            "time": 0.125,
+            "seconds": 2.875
+          },
+          {
+            "selector": "#scene2 > div:nth-of-type(1) > div:nth-of-type(1)",
+            "text": "Campus Creator AI",
+            "fontPx": 23,
+            "time": 3.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene3 > div:nth-of-type(1) > div:nth-of-type(1)",
+            "text": "Campus Creator AI",
+            "fontPx": 23,
+            "time": 7.125,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#scene4 > div:nth-of-type(1) > div:nth-of-type(1)",
+            "text": "Campus Creator AI",
+            "fontPx": 23,
+            "time": 11.125,
+            "seconds": 5.875
+          },
+          {
+            "selector": "div.final-inner > p:nth-of-type(1)",
+            "text": "Generate a promotional kit using the Gemini API.",
+            "fontPx": 24,
+            "time": 17.125,
+            "seconds": 2.875
+          },
+          {
+            "selector": "div.note-title",
+            "text": "Intro to Reinforcement Learning Workshop",
+            "fontPx": 25,
+            "time": 0.125,
+            "seconds": 2.875
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 160
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}
